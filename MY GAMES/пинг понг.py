@@ -21,7 +21,6 @@ class Ball:
         if pos[3] >= self.canvas.winfo_height():
             self.hit_bottom = True
             
-        # Проверка на столкновение с платформой
         if (pos[2] >= self.paddle.canvas.coords(self.paddle.id)[0] and
             pos[0] <= self.paddle.canvas.coords(self.paddle.id)[2] and
             pos[3] >= self.paddle.canvas.coords(self.paddle.id)[1]):
